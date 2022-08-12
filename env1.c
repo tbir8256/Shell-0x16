@@ -5,8 +5,7 @@
  * with  the name passed.
  * @nenv: name of the environment variable
  * @name: name passed
- *
- * Return: 0 if are not equal. Another value if they are
+ * Return: retruns 0 if are not equal. Another value if they are
  */
 int cmp_env_name(const char *nenv, const char *name)
 {
@@ -27,8 +26,7 @@ int cmp_env_name(const char *nenv, const char *name)
  * _getenv - get an environment variable
  * @name: name of the environment variable
  * @_environ: environment variable
- *
- * Return: value of the environment variable if is found.
+ * Return: retruns value of the environment variable if is found.
  * In other case, returns NULL.
  */
 char *_getenv(const char *name, char **_environ)
@@ -57,7 +55,6 @@ char *_getenv(const char *name, char **_environ)
 
 /**
  * _env - prints the evironment variables
- *
  * @datash: data relevant.
  * Return: 1 on success.
  */
