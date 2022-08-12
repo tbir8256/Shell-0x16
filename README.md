@@ -1,6 +1,8 @@
 0x16. C - Simple Shell
 Creating a simple shell
+
 General
+
 *Who designed and implemented the original Unix operating system
 ** Thompson and Dennis Ritchie created the first version of UNIX in 1969.
 *Who wrote the first version of the UNIX shell
@@ -22,9 +24,10 @@ General
 *What are the three prototypes of main
 **int main(), int argc, char **argv
 *How does the shell use the PATH to find the programs
-**
+**it reads each directory one by one starting from the root directory through the current directory
 *How to execute another program with the execve system call
-
+**it is excuted if the file name isbinary executable or a writing starting wiht shebang.
 *How to suspend the execution of a process until one of its children terminates
-
+**it is suspended by the wiait() system call
 *What is EOF / “end-of-file”?
+**it means the file it was reading is inded.
