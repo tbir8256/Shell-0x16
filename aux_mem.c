@@ -5,8 +5,7 @@
  * @newptr:  destination pointer.
  * @ptr: source pointer.
  * @size: size of the new pointer.
- *
- * Return: no return.
+ * Return: returns nothing.
  */
 void _memcpy(void *newptr, const void *ptr, unsigned int size)
 {
@@ -23,7 +22,6 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size)
  * @ptr: pointer to the memory previously allocated.
  * @old_size: size, in bytes, of the allocated space of ptr.
  * @new_size: new size, in bytes, of the new memory block.
- *
  * Return: ptr.
  * if new_size == old_size, returns ptr without changes.
  * if malloc fails, returns NULL.
@@ -62,7 +60,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
  * @ptr: double pointer to the memory previously allocated.
  * @old_size: size, in bytes, of the allocated space of ptr.
  * @new_size: new size, in bytes, of the new memory block.
- *
  * Return: ptr.
  * if new_size == old_size, returns ptr without changes.
  * if malloc fails, returns NULL.
